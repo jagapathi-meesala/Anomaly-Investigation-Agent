@@ -1,0 +1,16 @@
+name: detect-anomalies
+description: Detect numeric time-series anomalies with z-score and IQR evidence.
+version: 1.0.0
+input_schema:
+  type: object
+  required: [rows, metric]
+  properties:
+    rows: {type: array}
+    metric: {type: string}
+    value_key: {type: string}
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: detect_anomalies.py
+  runtime: python3

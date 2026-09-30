@@ -1,0 +1,16 @@
+name: build-anomaly-report
+description: Build a structured evidence-traceable anomaly report.
+version: 1.0.0
+input_schema:
+  type: object
+  required: [metric, anomalies, candidate_causes]
+  properties:
+    metric: {type: string}
+    anomalies: {type: array}
+    candidate_causes: {type: array}
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: build_anomaly_report.py
+  runtime: python3

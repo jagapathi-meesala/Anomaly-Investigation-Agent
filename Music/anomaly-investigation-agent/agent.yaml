@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: anomaly-investigation-agent
+version: 1.0.0
+description: Investigates structured time-series anomalies, ranks evidence-based candidate causes, and produces traceable findings.
+author: Agent Passport Project
+license: MIT
+skills:
+  - anomaly-detection
+  - root-cause-analysis
+  - anomaly-reporting
+tools:
+  - detect-anomalies
+  - investigate-root-cause
+  - build-anomaly-report
+tags:
+  - anomaly-detection
+  - root-cause-analysis
+  - observability
+  - data-analysis
+metadata:
+  framework_independent: true
+  deterministic_core: true

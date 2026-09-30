@@ -1,0 +1,17 @@
+name: investigate-root-cause
+description: Rank observable contextual factors associated with anomaly records.
+version: 1.0.0
+input_schema:
+  type: object
+  required: [rows, metric, anomalies]
+  properties:
+    rows: {type: array}
+    metric: {type: string}
+    value_key: {type: string}
+    anomalies: {type: array}
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: investigate_root_cause.py
+  runtime: python3
