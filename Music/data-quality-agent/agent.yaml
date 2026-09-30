@@ -1,0 +1,14 @@
+spec_version: "0.1.0"
+name: data-quality-agent
+version: 1.0.0
+description: A framework-independent agent for profiling datasets, validating data quality, detecting anomalies, and producing structured quality reports.
+skills:
+  - profile-dataset
+  - validate-data
+  - detect-anomalies
+  - generate-report
+tools:
+  - tools/profile_dataset.py
+  - tools/validate_data.py
+  - tools/detect_anomalies.py
+  - tools/generate_report.py
