@@ -10,3 +10,4 @@ htmlcov/
 *.log
 .gitagent/
 .DS_Store
+.git.backup/
